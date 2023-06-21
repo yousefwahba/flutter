@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:toku/screens/home_page.dart';
 
 void main() {
-  runApp(TokuApp());
+  runApp(JapaneseApp());
 }
 
-class TokuApp extends StatelessWidget {
-  const TokuApp({Key? key}) : super(key: key);
+class JapaneseApp extends StatelessWidget {
+  const JapaneseApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

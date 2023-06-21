@@ -9,12 +9,12 @@ class PhrasesPage extends StatelessWidget {
   final List<Item> phrases = const [
     Item(
       sound: 'dont_forget_to_subscribe.wav',
-      jpName: 'Kōdoku suru koto o wasurenaide kudasai',
+      jpName: 'Kōdoku suru koto',
       enName: 'dont forget to subscribe',
     ),
     Item(
       sound: 'i_love_programming.wav',
-      jpName: 'Watashi wa puroguramingu daisukidesu',
+      jpName: 'Watashi wa puroguramingu ',
       enName: 'i love  programming',
     ),
     Item(
@@ -66,7 +66,7 @@ class PhrasesPage extends StatelessWidget {
         itemBuilder: (context, index) {
           return PhraseItem(
             phrase: phrases[index],
-            color:Color(0xff50ADC7),
+            color: Color(0xff50ADC7),
             itemType: 'phrases',
           );
         },

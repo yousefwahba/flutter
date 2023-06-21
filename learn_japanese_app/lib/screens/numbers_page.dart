@@ -80,7 +80,9 @@ class NumbersPage extends StatelessWidget {
         itemBuilder: (context, index) {
           return ListItem(
             itemType: 'numbers',
-            item: numbers[index] , color: Color(0xffEF9235),);
+            item: numbers[index],
+            color: Color(0xffEF9235),
+          );
         },
       ),
     );
@@ -89,9 +91,13 @@ class NumbersPage extends StatelessWidget {
   List<Widget> getList(List<Item> numbers) {
     List<Widget> itemsList = [];
     for (int i = 0; i < numbers.length; i++) {
-      itemsList.add(ListItem(
-        itemType: 'numbers',
-        item: numbers[i] ,color: Color(0xffEF9235),),);
+      itemsList.add(
+        ListItem(
+          itemType: 'numbers',
+          item: numbers[i],
+          color: Color(0xffEF9235),
+        ),
+      );
     }
 
     return itemsList;

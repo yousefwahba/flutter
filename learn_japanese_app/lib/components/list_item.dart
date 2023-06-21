@@ -1,4 +1,3 @@
-import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:toku/models/item.dart';
 import 'package:toku/models/phrase.dart';
@@ -49,16 +48,7 @@ class ListItem extends StatelessWidget {
                   flex: 1,
                 ),
                 IconButton(
-                  onPressed: () {
-                    try {
-                      AudioCache player =
-                          AudioCache(prefix: 'assets/sounds/$itemType/');
-                      // player.(item.sound);
-                      // player.loadedFiles(item.sound);
-                    } catch (ex) {
-                      print(ex);
-                    }
-                  },
+                  onPressed: () async {},
                   icon: Icon(
                     Icons.play_arrow,
                     color: Colors.white,
@@ -102,15 +92,7 @@ class ListItem extends StatelessWidget {
                   flex: 1,
                 ),
                 IconButton(
-                  onPressed: () {
-                    try {
-                      AudioCache player =
-                          AudioCache(prefix: 'assets/sounds/$itemType/');
-                      // player.play(item!.sound);
-                    } catch (ex) {
-                      print(ex);
-                    }
-                  },
+                  onPressed: () {},
                   icon: Icon(
                     Icons.play_arrow,
                     color: Colors.white,
@@ -168,15 +150,7 @@ class PhraseItem extends StatelessWidget {
             flex: 1,
           ),
           IconButton(
-            onPressed: () {
-              try {
-                AudioCache player =
-                    AudioCache(prefix: 'assets/sounds/$itemType/');
-                // player.play(phrase.sound);
-              } catch (ex) {
-                print(ex);
-              }
-            },
+            onPressed: () {},
             icon: Icon(
               Icons.play_arrow,
               color: Colors.white,

@@ -14,14 +14,13 @@ class HomePage extends StatelessWidget {
       backgroundColor: Color(0xffFEF6DB),
       appBar: AppBar(
         backgroundColor: Color(0xff46322B),
-        title: Text('Toku'),
+        title: Text('Japanese Learning'),
       ),
       body: Column(
         children: [
           Category(
             onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: ( context) {
+              Navigator.push(context, MaterialPageRoute(builder: (context) {
                 return NumbersPage();
               }));
             },
@@ -29,10 +28,8 @@ class HomePage extends StatelessWidget {
             color: Color(0xffEF9235),
           ),
           Category(
-            onTap: () 
-            {
-                 Navigator.push(context,
-                  MaterialPageRoute(builder: ( context) {
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) {
                 return FamilyMembersPage();
               }));
             },
@@ -40,11 +37,8 @@ class HomePage extends StatelessWidget {
             color: Color(0xff558B37),
           ),
           Category(
-            onTap: ()
-            {
-              
-                 Navigator.push(context,
-                  MaterialPageRoute(builder: ( context) {
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) {
                 return ColorsPage();
               }));
             },
@@ -52,11 +46,8 @@ class HomePage extends StatelessWidget {
             color: Color(0xff79359F),
           ),
           Category(
-            onTap: ()
-            {
-              
-                 Navigator.push(context,
-                  MaterialPageRoute(builder: ( context) {
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) {
                 return PhrasesPage();
               }));
             },
